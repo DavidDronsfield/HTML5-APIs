@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 APIs</title>
+	<link rel="stylesheet" href="geoHTML5.css">
+</head>
+
+<body onLoad = "loadDemo()">
+
+	<header>
+		<h1>Odometer Demo</h1>
+		<h4>Live Data</h4>
+	</header>
+
+	<div id="container">
+
+		<section>
+			<article>
+
+				<header>
+					<h1>Your Location</h1>
+				</header>
+
+				<p id="status"></p>
+
+				<div>
+					<p id="latitude">Latitude: </p>
+					<p id="longitude">Longitude: </p>
+					<p id="accuracy">Accuracy: </p>
+					<p id="timestamp">Timestamp: </p>
+					<p id="currDist">Distance Traveled since last update: </p>
+					<p id="totalDist">Total Distance Traveled: </p>
+				</div>
+
+			</article>
+		</section>
+
+		<section>
+			<p id="demo">Click the button to get your position.</p>
+			<button onclick="getLocation()">Try It</button>
+			<div id="mapholder"></div>
+		</section>
+
+	</div>
+	<script src="geolocation.js"></script>
+	<script src="map.js"></script>
+</body>
+</html>
