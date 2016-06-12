@@ -1,0 +1,8 @@
+svg {
+	border: 1px solid black;
+}
+
+#tree:hover {
+	opacity: 0.3;
+	cursor: crosshair;
+}
